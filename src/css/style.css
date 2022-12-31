@@ -1,0 +1,188 @@
+html{
+    height: 100vh;
+    width: auto;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #F3F5FC;
+}
+
+.contenedorHead {
+    position: fixed;
+    background-color: rgba(27, 12, 158, 0.5);
+    padding: 10px;
+    width: 100%;
+    justify-items: center;
+}
+
+.contenedorHead img{
+    margin-left: 50px;
+}
+
+.logo {
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedorBody {
+    padding-top: 100px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contenedorInput{
+    text-align: center;
+    width: 60%;
+    height: 75vh;
+}
+
+.contenedorOutput {
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    width: 30%;
+    height: 75vh;
+    padding: 5px;
+}
+
+.contenedorInput textarea {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    height: 400px;
+    width: 600px;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    color: #0A3871;
+    overflow-y: auto;
+    margin-left: 6px;
+}
+
+textarea::placeholder{
+    color: rgba(16, 4, 65, 0.4);
+}
+
+.contenedorOutput textarea {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    height: 430px;
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    color: #495057;
+    overflow-y: auto;
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    border-color: transparent;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+button:hover{
+    background: rgb(7, 42, 84);
+    transition-delay: 20ms;
+}
+.contenedorOutput label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;   
+    text-align: center;
+    color: #343A40;
+}
+
+p {
+    color: #495057;
+    font-size: 16px;
+}
+
+
+.contenedorInput .btnDesencriptar {
+    background: transparent;
+    color: #0A3871;
+    font-size: 16px;
+    border-color: #0A3871;
+    outline: none;
+}
+
+.btnDesencriptar:hover{
+    background: rgb(200, 210, 244);
+}
+
+.contenedorOutput #btnCopy {
+    background: transparent;
+    border-color: #0a387139;
+    outline: none;
+    color: #0A3871;
+    font-size: 16px;
+    width: 100%;
+}
+
+#btnCopy:hover{
+    background: rgba(200, 210, 244, 0.225);
+}
+
+.contenedorOutput #img {
+    margin-top: 60px;
+}
+
+#msgError{
+    margin-bottom: 5px;
+    text-align: start;
+    color: #495057;
+}
+#msgError img{
+    margin-left: 90px;
+}
+
+#msgError label{
+    margin-left: 10px;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background: rgba(116, 130, 179, 0.133);
+}
+
+.footer{
+    padding: 10px;
+    color: #495057;
+    text-align: center;
+}
+
+@media all and (max-width: 375px), (max-width: 768px)  {
+    .contenedorBody {
+      flex-direction: column;
+    }
+    .contenedorBody .contenedorInput {
+      width: 100%;
+      height: 100%;
+      order: 1;
+    }
+    .contenedorBody .contenedorOutput {
+      width: 100%;
+      height: 100%;
+      order: 2;
+    }
+
+  }
+
+  
+
